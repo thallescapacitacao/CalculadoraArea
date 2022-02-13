@@ -1,6 +1,6 @@
-package figura;
+package area;
 
-import base.Area;
+import contrato.Area;
 
 public class Quadrado implements Area {
 

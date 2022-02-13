@@ -1,8 +1,9 @@
-package listagem;
+package lista;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import base.Area;
+import contrato.Area;
 
 public class Areas {
 
@@ -16,9 +17,12 @@ public class Areas {
         areas.add(area);
     }
 
-    // TODO: retornar um novo objeto
-    public List<Area> listar() {
-        return areas;
+    public double somar() {
+        double resultado = 0;
+        for (Area area : areas) {
+            resultado += area.calcular();
+        }
+        return resultado;
     }
 
 }
